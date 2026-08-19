@@ -1,0 +1,59 @@
+# ==============================
+# Frontend - React / Vite
+# ==============================
+
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+
+# ==============================
+# Backend - Spring Boot / Maven
+# ==============================
+
+backend/target/
+
+
+# ==============================
+# Environment & Secrets
+# ==============================
+
+.env
+.env.*
+!.env.example
+
+# Local Spring Boot configuration
+application-local.properties
+application-local.yml
+
+
+# ==============================
+# IDE
+# ==============================
+
+.vscode/
+.idea/
+*.iml
+
+
+# ==============================
+# Operating System
+# ==============================
+
+.DS_Store
+Thumbs.db
+
+
+# ==============================
+# Logs
+# ==============================
+
+*.log
+
+
+# ==============================
+# Temporary Files
+# ==============================
+
+*.tmp
+*.temp
