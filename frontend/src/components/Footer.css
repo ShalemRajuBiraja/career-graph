@@ -1,0 +1,30 @@
+.career-footer {
+  background-color: #f8f9fa;
+}
+
+.footer-brand-icon {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background-color: #111827;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.footer-description {
+  max-width: 500px;
+  line-height: 1.7;
+}
+
+.footer-link {
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #111827;
+}

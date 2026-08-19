@@ -1,0 +1,45 @@
+/* #root {
+  width: 100%;
+} */
+.app-content {
+  min-height: calc(100vh - 300px);
+}
+.home-page {
+  background-color: #ffffff;
+}
+
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+.career-visual {
+  max-width: 420px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+}
+
+.skill-node,
+.career-node {
+  padding: 18px 20px;
+  border-radius: 14px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  font-weight: 600;
+  color: #111827;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.career-node {
+  background-color: #111827;
+  color: #ffffff;
+  border-color: #111827;
+}
+
+.connection-line {
+  width: 2px;
+  height: 32px;
+  margin: 0 auto;
+  background-color: #d1d5db;
+}

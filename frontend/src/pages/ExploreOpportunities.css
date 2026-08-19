@@ -1,0 +1,188 @@
+.explore-page {
+  min-height: 70vh;
+  background-color: #ffffff;
+}
+
+.skill-dropdown {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background-color: #ffffff;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+.skill-dropdown:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Category header */
+
+.skill-category-header {
+  width: 100%;
+  min-height: 72px;
+
+  padding: 18px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: none;
+  background-color: #ffffff;
+
+  color: #111827;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+}
+
+.skill-category-header:hover {
+  background-color: #f8f9fa;
+}
+
+.skill-category-header:focus {
+  outline: none;
+}
+
+/* Dropdown content */
+
+.skill-dropdown-menu {
+  padding: 10px 14px 14px;
+
+  border-top: 1px solid #e5e7eb;
+
+  background-color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Individual skill */
+
+.skill-option {
+  width: 100%;
+
+  min-height: 44px;
+
+  padding: 10px 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: transparent;
+
+  color: #374151;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.skill-option:hover {
+  background-color: #f3f4f6;
+}
+
+.skill-option.selected {
+  background-color: #111827;
+  color: #ffffff;
+}
+
+/* Selected skills */
+
+.selected-skills-section {
+  padding: 24px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+
+  background-color: #f8f9fa;
+}
+
+/* Tablet */
+
+@media (max-width: 991.98px) {
+  .skill-category-header {
+    min-height: 68px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 767.98px) {
+  .skill-category-header {
+    min-height: 64px;
+    padding: 16px;
+  }
+
+  .skill-dropdown-menu {
+    padding: 8px 10px 10px;
+  }
+
+  .skill-option {
+    min-height: 42px;
+  }
+}
+.selected-skill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 8px 10px 8px 14px;
+
+  border-radius: 999px;
+
+  background-color: #111827;
+  color: #ffffff;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.selected-skill-badge button {
+  width: 22px;
+  height: 22px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+}
+
+.selected-skill-badge button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.selected-skills-section .btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

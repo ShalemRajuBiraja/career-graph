@@ -1,0 +1,53 @@
+.navbar {
+  min-height: 72px;
+}
+
+.navbar-brand {
+  color: #111827;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  color: #111827;
+}
+
+.brand-icon {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #111827;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.nav-link {
+  color: #4b5563;
+  font-weight: 500;
+  padding: 8px 14px !important;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #111827;
+  background-color: #f3f4f6;
+}
+
+.nav-link.active {
+  color: #111827;
+  background-color: #f3f4f6;
+  font-weight: 600;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 6px 8px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
