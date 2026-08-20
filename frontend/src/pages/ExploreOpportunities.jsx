@@ -116,9 +116,8 @@ const handleFindCareer = async () => {
       },
     });
   } catch (error) {
-
+    
     console.error("Failed to fetch career results:", error);
-    toast.error("Failed to fetch career results. Please try again.");
   } finally {
     setIsLoading(false);
   }
@@ -250,7 +249,7 @@ const handleFindCareer = async () => {
               onClick={handleFindCareer}
             >
              {
-              isLoading ? "Finding Careers... Please wait" : "Find Careers"
+              isLoading ? "Finding Careers...Please wait" : "Find Careers"
              }
               <i className="bi bi-arrow-right ms-2"></i>
             </button>
