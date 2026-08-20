@@ -5,6 +5,7 @@ import CareerResults from "./pages/CareerResults";
 import "./App.css";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
@@ -16,7 +17,12 @@ function App() {
         <Route path="/career-results" element={<CareerResults />} />
       </Routes>
       <Footer />
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+      />
     </BrowserRouter>
+    
   );
 }
 
