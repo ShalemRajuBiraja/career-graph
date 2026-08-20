@@ -19,7 +19,7 @@ public class CorsConfig {
                 registry.addMapping("/api/**")
                         .allowedOrigins(
                                 "http://localhost:5173",
-                        		"https://career-graph-final.vercel.app/"
+                        		"https://career-graph-74yu.vercel.app/"
                         )
                         .allowedMethods(
                                 "GET",
