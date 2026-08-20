@@ -62,3 +62,32 @@ The application uses a graph database to match selected skills with different ca
 🔍 Career Matching
         ↓
 🎯 Career Results
+
+## 🤔 Why a Graph Database?
+
+Career information contains many relationships between skills, technologies, and careers.
+
+A graph database makes it easier to store and find these relationships.
+
+Example:
+
+```text
+Java ──► Spring Boot ──► Backend Developer
+  │
+  └────► Java Full Stack Developer
+
+  ⚙️ Setup and Run
+    cd frontend
+    npm install
+    npm run dev
+
+
+## 📸 UI Screenshots
+
+### 🏠 Home Page[Home Page](images/home.png)
+
+### 🎯 Career Search
+[Career Search](images/CareerPage.jpeg)
+
+### 📊 Career Results
+![Career Results](images/ResultPage.jpeg)
