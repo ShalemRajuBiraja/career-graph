@@ -160,7 +160,7 @@ const careers = careerResults?.careers || [];
             className="btn btn-outline-primary"
             onClick={handleBack}
           >
-            ← Select Different Skills
+            ← Select  Skills
           </button>
         </div>
 
