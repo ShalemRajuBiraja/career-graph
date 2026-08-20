@@ -117,6 +117,7 @@ const handleFindCareer = async () => {
     });
   } catch (error) {
     
+    toast.error("Failed to fetch career results. Please try again later.");
     console.error("Failed to fetch career results:", error);
   } finally {
     setIsLoading(false);
