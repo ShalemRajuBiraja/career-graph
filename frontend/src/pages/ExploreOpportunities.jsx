@@ -241,20 +241,28 @@ const handleFindCareer = async () => {
             </div>
           )}
 
-          {/* Find Career Button */}
-          <div className="text-center mt-4">
-            <button
-              type="button"
-              className="btn btn-dark btn-lg px-4"
-              disabled={selectedSkills.length === 0}
-              onClick={handleFindCareer}
-            >
-             {
-              isLoading ? "Finding Careers...Please wait" : "Find Careers"
-             }
-              <i className="bi bi-arrow-right ms-2"></i>
-            </button>
-          </div>
+         {/* Find Career Button */}
+            <div className="text-center mt-4">
+              <button
+                type="button"
+                className={`btn btn-dark btn-lg px-4 find-career-btn ${
+                  isLoading ? "loading" : ""
+                }`}
+                disabled={selectedSkills.length === 0 || isLoading}
+                onClick={handleFindCareer}
+              >
+                {isLoading ? (
+                  <span className="loading-text">
+                    Finding Careers... Please wait
+                  </span>
+                ) : (
+                  <>
+                    Find Careers
+                    <i className="bi bi-arrow-right ms-2"></i>
+                  </>
+                )}
+              </button>
+            </div>
 
         </div>
 
