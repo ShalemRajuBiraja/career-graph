@@ -1,22 +1,23 @@
-# CareerGraph
+# 🚀 CareerGraph
 
 CareerGraph is a web application that helps users find suitable career paths based on their skills.
 
 The application uses a graph database to match selected skills with different career paths and shows the matched skills, missing skills, and match percentage.
 
-## Features
+## ✨ Features
 
-- Select skills from different categories
-- Get career recommendations based on selected skills
-- View skill match percentage
-- View matched skills
-- View skills to improve
-- Responsive design
-- Loading and error messages
+- 🎯 Select skills from different categories
+- 💼 Get career recommendations based on selected skills
+- 📊 View skill match percentage
+- ✅ View matched skills
+- 📚 View skills to improve
+- 📱 Responsive design
+- 🔔 Loading and error messages
 
-## Technologies Used
+## 🛠️ Technologies Used
 
-### Frontend
+### 💻 Frontend
+
 - React.js
 - JavaScript
 - HTML
@@ -26,35 +27,38 @@ The application uses a graph database to match selected skills with different ca
 - React Router
 - React Toastify
 
-### Backend
+### ⚙️ Backend
+
 - Java
 - Spring Boot
 - REST API
 - Maven
 - Neo4j Java Driver
 
-### Database
+### 🗄️ Database
+
 - CognoDB Cloud
 - Cypher
 
-### Tools
+### 🔧 Tools
+
 - VS Code
 - Eclipse
 - Postman
 - Git
 - GitHub
 
-## How It Works
+## 🔄 How It Works
 
 ```text
-User selects skills
+👤 User selects skills
         ↓
-React Frontend
+💻 React Frontend
         ↓
-Spring Boot REST API
+⚙️ Spring Boot REST API
         ↓
-CognoDB Graph Database
+🗄️ CognoDB Graph Database
         ↓
-Career Matching
+🔍 Career Matching
         ↓
-Career Results
+🎯 Career Results
