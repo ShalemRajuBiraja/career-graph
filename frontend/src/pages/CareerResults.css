@@ -1,0 +1,287 @@
+.career-results-page {
+  min-height: calc(100vh - 140px);
+  background: #f8f9fa;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.results-header {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.results-label {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+.results-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 12px;
+}
+
+.results-header p {
+  color: #6c757d;
+  font-size: 17px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   Career Card
+========================= */
+
+.career-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 26px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.career-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
+}
+
+
+/* =========================
+   Rank
+========================= */
+
+.career-rank {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  background: #e7f1ff;
+  color: #0d6efd;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  margin-bottom: 16px;
+}
+
+
+/* =========================
+   Career Information
+========================= */
+
+.career-card h2 {
+  font-size: 23px;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 10px;
+}
+
+.career-description {
+  color: #6c757d;
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 68px;
+  margin-bottom: 22px;
+}
+
+
+/* =========================
+   Match Percentage
+========================= */
+
+.match-section {
+  margin-bottom: 24px;
+}
+
+.match-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  color: #495057;
+}
+
+.match-info strong {
+  color: #0d6efd;
+  font-size: 16px;
+}
+
+.progress {
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: #0d6efd;
+  border-radius: 20px;
+}
+
+
+/* =========================
+   Skills
+========================= */
+
+.skills-section {
+  margin-top: 20px;
+}
+
+.skills-section h6 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 10px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.skill-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 5px 9px;
+
+  border-radius: 6px;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.skill-badge.matched {
+  color: #146c43;
+  background-color: #d1e7dd;
+}
+
+.skill-badge.missing {
+  color: #664d03;
+  background-color: #fff3cd;
+}
+
+.no-skills {
+  color: #6c757d;
+  font-size: 12px;
+}
+
+
+/* =========================
+   Footer Action
+========================= */
+
+.results-footer {
+  padding-bottom: 30px;
+}
+
+
+/* =========================
+   Empty State
+========================= */
+
+.results-empty {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 50px 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.empty-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.results-empty h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.results-empty p {
+  color: #6c757d;
+  margin-bottom: 25px;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+
+  .results-header h1 {
+    font-size: 32px;
+  }
+
+  .results-header p {
+    font-size: 15px;
+  }
+
+  .career-card {
+    padding: 22px;
+  }
+
+  .career-card h2 {
+    font-size: 21px;
+  }
+
+  .career-description {
+    min-height: auto;
+  }
+}
+
+
+@media (max-width: 576px) {
+
+  .career-results-page {
+    min-height: calc(100vh - 100px);
+  }
+
+  .results-header h1 {
+    font-size: 28px;
+  }
+
+  .results-header {
+    padding: 0 10px;
+  }
+
+  .career-card {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .results-empty {
+    margin: 40px 10px;
+    padding: 40px 20px;
+  }
+}

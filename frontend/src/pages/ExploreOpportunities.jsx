@@ -72,6 +72,7 @@ const skillCategories = [
 
 export const ExploreOpportunities = () => {
   const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState(false);
 
   const [openCategory, setOpenCategory] = useState(null);
   const [selectedSkills, setSelectedSkills] = useState([]);
@@ -113,6 +114,8 @@ const handleFindCareer = async () => {
     });
   } catch (error) {
     console.error("Failed to fetch career results:", error);
+  } finally {
+    setIsLoading(false);
   }
 };
 
@@ -241,7 +244,9 @@ const handleFindCareer = async () => {
               disabled={selectedSkills.length === 0}
               onClick={handleFindCareer}
             >
-              Click to Result
+             {
+              isLoading ? "Finding Careers..." : "Find Careers"
+             }
               <i className="bi bi-arrow-right ms-2"></i>
             </button>
           </div>

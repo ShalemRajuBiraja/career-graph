@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {Home} from "./pages/Home";
 import {ExploreOpportunities} from "./pages/ExploreOpportunities";
-import {CareerResults} from "./pages/CareerResults";
+import CareerResults from "./pages/CareerResults";
 import "./App.css";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
