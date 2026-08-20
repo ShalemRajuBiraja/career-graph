@@ -18,8 +18,8 @@ function App() {
       </Routes>
       <Footer />
       <ToastContainer
-        position="top-right"
-        autoClose={3000}
+        position="top-center"
+        autoClose={750}
       />
     </BrowserRouter>
     
