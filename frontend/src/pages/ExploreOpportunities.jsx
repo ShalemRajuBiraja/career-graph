@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./ExploreOpportunities.css";
 import { getCareerResults } from "../services/careerService";
+import { toast } from "react-toastify";
 
 const skillCategories = [
   {
@@ -104,6 +105,8 @@ const handleFindCareer = async () => {
     return;
   }
 
+    setIsLoading(true);
+
   try {
     const response = await getCareerResults(selectedSkills);
 
@@ -113,7 +116,9 @@ const handleFindCareer = async () => {
       },
     });
   } catch (error) {
+
     console.error("Failed to fetch career results:", error);
+    toast.error("Failed to fetch career results. Please try again.");
   } finally {
     setIsLoading(false);
   }
@@ -245,7 +250,7 @@ const handleFindCareer = async () => {
               onClick={handleFindCareer}
             >
              {
-              isLoading ? "Finding Careers..." : "Find Careers"
+              isLoading ? "Finding Careers... Please wait" : "Find Careers"
              }
               <i className="bi bi-arrow-right ms-2"></i>
             </button>
